@@ -1,0 +1,65 @@
+p {
+    text-align: center;
+    margin: 0;
+}
+/* Common styles */
+
+.rectangle {
+    height: 50px;
+    width: 200px;
+    padding: 20px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+}
+
+.square {
+    height: 50px;
+    width: 50px;
+    background-color: ivory;
+}
+
+/* Method 1 (Using CSS transition property) */
+
+.rectangle.transition {
+    background-color: lightgreen;
+}
+
+.square.transition {
+    transition: transform 1s linear;
+}
+
+.start {
+    transform: translate(300%);
+}
+
+/* Method 2 (Using CSS animation property & @keyframes) */
+
+.rectangle.animation {
+    background-color: lightskyblue;
+}
+
+.square.animation {
+    animation: 1s change-position infinite alternate linear;
+}
+
+@keyframes change-position {
+    to {
+        transform: translate(300%);
+    }
+}
+
+/* Method 3 (Using setTimeout) */
+
+.rectangle.timeout {
+    background-color: wheat;
+}
+
+/* Method 4 (Using requireAnimationFrame) */
+
+.rectangle.request {
+    background-color: thistle;
+}
+
+
+

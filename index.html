@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Animations</title>
+</head>
+<body>
+    <p>Method 1 - Using CSS property transition</p>
+    <div class="rectangle transition">
+        <div class="square transition"></div>
+    </div>
+    <p>Method 2 - Using CSS property animation and @keyframes</p>
+    <div class="rectangle animation">
+        <div class="square animation"></div>
+    </div>
+    <p>Method 3 - Using setTimeout</p>
+    <div class="rectangle timeout">
+        <div class="square timeout"></div>
+    </div>
+    <p>Method 4a - Using requestAnimationFrame with timestamp</p>
+    <div class="rectangle request timestamp">
+        <div class="square request timestamp"></div>
+    </div>
+    <p>Method 4a - Using requestAnimationFrame without timestamp</p>
+    <div class="rectangle request simple">
+        <div class="square request simple"></div>
+    </div>
+    <script src="index.js"></script>
+    <!-- <script async src="bubble.js"></script> -->
+</body>
+</html>
